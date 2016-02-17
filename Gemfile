@@ -8,9 +8,10 @@ gem 'rails-api'
 gem 'spring', :group => :development
 
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
+
 
 
 
