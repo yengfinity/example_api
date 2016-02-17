@@ -4,7 +4,7 @@ class CustomersController < ApplicationController
   def index
     @customers = Customer.all
 
-    render json: "hello unity"
+    render json: @customers
   end
 
   def show
