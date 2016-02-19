@@ -15,7 +15,7 @@ class CustomersController < ApplicationController
     @customer = Customer.new(customer_params)
 
     if @customer.save
-      head 204, location: @customer
+      render json: @customer, status: :created, location: @customer
     else
       render json: @customer.errors, status: :unprocessable_entity
     end
