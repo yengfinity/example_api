@@ -13,7 +13,6 @@ class CustomersController < ApplicationController
 
   def create
     @customer = Customer.new(customer_params)
-
     if @customer.save
       render json: @customer, status: :created, location: @customer
     else
@@ -42,7 +41,11 @@ class CustomersController < ApplicationController
     end
 
     def customer_params
-      params.require(:customer).permit(:full_name, :email, :phone)
+      if params[:customer].is_a? String
+        JSON.parse params[:customer]
+      else
+        params.require(:customer).permit(:full_name, :email, :phone)
+      end
     end
 
 end

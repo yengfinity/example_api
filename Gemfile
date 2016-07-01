@@ -12,8 +12,22 @@ gem 'pg'
 
 gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 
+gem 'pry-rails', :group => :development
 
+#Sabisu Gem
+# gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+# gem 'compass-rails', '~> 2.0.2'
+# gem 'furatto'
+# gem 'font-awesome-rails'
+# gem 'simple_form'
 
+# gem 'sabisu_rails'
+# gem 'compass-rails'
+# gem 'furatto'
+# gem 'font-awesome-rails'
+# gem 'simple_form'
+
+# gem 'sprockets-rails', :require => 'sprockets/rails'
 
 
 # To use ActiveModel has_secure_password
